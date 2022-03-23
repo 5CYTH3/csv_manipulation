@@ -6,14 +6,14 @@
 **Oubliez pas, vous avez besoin d'installer git et vscode sur votre ordi.**
 Une fois git installé, ouvrez un terminal et tapez les commandes suivantes :
 ```
-git config  --global user.email "youremail"
-git config  --global user.name "yourpseudo"
+git config --global user.email "youremail"
+git config --global user.name "yourpseudo"
 ```
 *(remplacez yourpseudo et youremail par les valeur correspondantes)*
 
-Quand vous voulez récupérer votre code, faites sur votre repository "fetch upstream". (le truc sur votre compte github là) puis allez dans vscode, allez dans le panneau git et cliquez sur les 3 petits points pui "pull"
+Quand vous voulez récupérer votre code, faites sur votre repository "fetch upstream". (le truc sur votre compte github là) puis allez dans vscode, allez dans le panneau git et cliquez sur les 3 petits points puis "pull"
 
-Quand vous voulez mettre en ligne votre code sur votre repository, allez sur VisualStudioCode, et allez dans le panneau "contrôle de code source" (dans la barre à droite, passez votre curseur si vous trouvez pas).
+Quand vous voulez mettre en ligne votre code sur votre repository, allez sur Visual Studio Code, et allez dans le panneau "contrôle de code source" (dans la barre à droite, passez votre curseur si vous trouvez pas).
 
 Puis, cliquez sur la petite coche "Commit" en haut du panneau, et dites dans la pop-up les changements que vous avez faits.
 Enfin, cliquez sur le bouton apparu dans le panneau pour le mettre en ligne.
