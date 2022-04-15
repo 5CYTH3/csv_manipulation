@@ -5,21 +5,30 @@ import matplotlib.pyplot as plt
 # Mathis : Sales
 # Me : Transactions (txns)
 
-def txns_graph(data: p.DataFrame):
+
+def show_graph(data: p.DataFrame, name: str):
     """
-    This function print a chart with the 10 Collections with the most transactions 
-    in the dataset, with their height the Txns column associated values.
-    @param: p.DataFrame
+    This function shows a bar chart with y datas of the 10 first NFT collection.
+    @param: data, x, y
+    @return: matplotlib chart
     """
-    y = data['Txns'].head(10)
-    x = data['Collections'].head(10)
+    ordered_data = data.sort_values(name)
+    y = ordered_data[name].head(10)
+    x = ordered_data['Collections'].head(10)
+    plt.title(name)
     plt.bar(x, y)
     plt.show()
-    
+
+
 def main():
     data = p.read_csv('nft_sales.csv')
-    txns_graph(data)
-    
+    # Show transactions
+    show_graph(data, 'Txns')
+    # Show Sales
+    show_graph(data, 'Sales')
+    # Show Owners
+    show_graph(data, 'Owners')
+
 
 if __name__ == "__main__":
     main()
