@@ -8,7 +8,7 @@ git config  --global user.name "yourpseudo"
 ```
 *(remplacez yourpseudo et youremail par les valeur correspondantes)*
 
-Quand vous voulez récupérer votre code, faites sur votre repository "fetch upstream". (le truc sur votre compte github là) puis allez dans vscode, allez dans le panneau git et cliquez sur les 3 petits points pui "pull"
+Quand vous voulez récupérer votre code, faites sur votre repository "fetch upstream". (le truc sur votre compte github là) puis allez dans vscode, allez dans le panneau git et cliquez sur les 3 petits points puis "pull"
 
 Quand vous voulez mettre en ligne votre code sur votre repository, allez sur VisualStudioCode, et allez dans le panneau "contrôle de code source" (dans la barre à droite, passez votre curseur si vous trouvez pas).
 
