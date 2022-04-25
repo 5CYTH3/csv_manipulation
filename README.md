@@ -1,21 +1,37 @@
 # csv_manipulation
 
+## Documentation
+
+1. Introduction
+2. Librairies utilisées
+3. Notre démarche
+4. Détail du code
+
+## Introduction
+Consigne :
+A partir d'une source de donnée choisies ou créées par vous, créer un programme Python d'acquisition (à partir d'un fichier CSV) et de restitution de données.
+
+Nous avons décidé pour notre part, de partir sur l'option de la création de graphiques via différentes librairies.
+
+## Librairies utilisées
+Pour ce projet, nous avons eu recours aux librairies [matplotlib](https://matplotlib.org/) (notamment pour la création des différents graphiques) et de [pandas](https://pandas.pydata.org/) pour le traitement et l'interprétation des données du fichier .csv
+
+## Notre démarche
+Le but était de restituer de la donnée __réellement intéressante__ à analyser. Pour cela, quoi de mieux que visualiser les record-men de ce dataset? Dans chacuns des graphiques sont affichés les **10 collections de NFT** avec la valeur la plus *élevée* associée à la colonne du dataset précisée.
+
+## Détail du code
+
+Durant le développement de ce script, deux fonctions furent créées : `plot_bar_chart` et `plot_pie_chart`
+
+```python
+def plot_bar_chart(data: p.DataFrame, name: str, color: str, fig_id: int):
+    ...
+
+def plot_pie_chart(data: p.DataFrame, name: str, fig_id: int) -> any:
+    ...
+```
+
+Comme leur nom l'indique, ces deux fonctions permettent d'afficher à partir d'un dataset, les 10 plus grandes valeurs d'une colonne `name` à partir d'un DataFrame panda `data`, récupérée d'un dataset. Les paramètres `color` et `fig_id` ne sont que des ints qui s'incrémentent, présents pour qu'il n'y ai pas de conflits lors de l'affichage des différents graphiques.
+
 ## Contribuer au projet
-> Pour contribuer au projet, exécutez juste ces actions :
-
-**Oubliez pas, vous avez besoin d'installer git et vscode sur votre ordi.**
-Une fois git installé, ouvrez un terminal et tapez les commandes suivantes :
-```
-git config  --global user.email "youremail"
-git config  --global user.name "yourpseudo"
-```
-*(remplacez yourpseudo et youremail par les valeur correspondantes)*
-
-Quand vous voulez récupérer votre code, faites sur votre repository "fetch upstream". (le truc sur votre compte github là) puis allez dans vscode, allez dans le panneau git et cliquez sur les 3 petits points pui "pull"
-
-Quand vous voulez mettre en ligne votre code sur votre repository, allez sur VisualStudioCode, et allez dans le panneau "contrôle de code source" (dans la barre à droite, passez votre curseur si vous trouvez pas).
-
-Puis, cliquez sur la petite coche "Commit" en haut du panneau, et dites dans la pop-up les changements que vous avez faits.
-Enfin, cliquez sur le bouton apparu dans le panneau pour le mettre en ligne.
-
-> Si jamais à tout hasard vous voulez que je fusionne votre code avec le mien, vous devez faire une pull-request. Renseignez vous sur internet pour faire ça.
+Si vous souhaitez aider au développement du projet et y contribuer (beginner-friendly, créée uniquement pour les amis du lycée), rendez vous sur [CONTRIBUTE.md](CONTRIBUTE.md)
