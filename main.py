@@ -1,5 +1,6 @@
 import pandas as p
-import matplotlib.pyplot as plt, matplotlib.container as plb
+import matplotlib.pyplot as plt
+import matplotlib.container as plb
 
 # Enzo : Owners
 # Mathis : Sales
@@ -18,7 +19,6 @@ def plot_bar_chart(data: p.DataFrame, name: str, color: str, fig_id: int) -> plb
     f = plt.figure(fig_id)
     plt.title(name)
     return plt.bar(x=x, height=y, color=color)
-    
 
 
 def plot_pie_chart(data: p.DataFrame, name: str, fig_id: int) -> any:
@@ -48,7 +48,6 @@ def main():
     # Show Owners
     plot_bar_chart(data, 'Owners', 'green', 3)
     plt.show()
-
 
 
 if __name__ == "__main__":
