@@ -17,7 +17,7 @@ Nous avons décidé pour notre part, de partir sur l'option de la création de g
 Pour ce projet, nous avons eu recours aux librairies [matplotlib](https://matplotlib.org/) (notamment pour la création des différents graphiques) et de [pandas](https://pandas.pydata.org/) pour le traitement et l'interprétation des données du fichier .csv
 
 ## Notre démarche
-Le but était de restituer de la donnée __réellement intéressante__ à analyser. Pour cela, quoi de mieux que visualiser les record-men de ce dataset? Dans chacuns des graphiques sont affichés les **5 à 10 collections de NFT** avec la valeur la plus *élevée* associée à la colonne du dataset précisée.
+Le but était de restituer de la donnée __réellement intéressante__ à analyser. Pour cela, quoi de mieux que visualiser les record-men de ce dataset? Dans chacuns des graphiques sont affichés les **5 à 10 collections de NFT** (Non-fungible token ou jetons non-fongibles) avec la valeur la plus *élevée* associée à la colonne du dataset précisée.
 
 ## Détail du code
 
